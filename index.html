@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nails by Kylie 💅</title>
+  <title>Nails by Kylie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       font-family: Arial;
       margin: 0;
-      padding: 0;
       background: #fff0f5;
       text-align: center;
     }
@@ -21,14 +20,19 @@
       font-weight: bold;
     }
 
-    p {
-      padding: 10px;
-      font-size: 16px;
+    .subtitle {
+      padding: 15px 20px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    h2 {
+      margin-top: 10px;
     }
 
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 15px;
       padding: 15px;
     }
@@ -36,8 +40,13 @@
     .card {
       background: white;
       border-radius: 15px;
-      padding: 10px;
+      padding: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
     }
 
     .card img {
@@ -45,111 +54,107 @@
       border-radius: 10px;
     }
 
-    .card h3 {
-      font-size: 16px;
-      margin: 10px 0;
+    .title {
+      font-weight: bold;
+      margin: 8px 0 4px;
     }
 
-    button {
+    .desc {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .btn {
       background: #ff69b4;
-      border: none;
       color: white;
-      padding: 10px;
-      border-radius: 10px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    button:hover {
-      background: #ff1493;
+      padding: 8px 12px;
+      border-radius: 20px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      margin: 3px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  💖 Nails by Kylie
-</header>
+<header>💖 Nails by Kylie</header>
 
-<p>
-  Click any nail design below to shop the look on Amazon 💅✨
+<p class="subtitle">
+Discover viral nail designs 💅 loved on Pinterest.  
+Tap an image to shop instantly on Amazon ✨
 </p>
 
 <h2>✨ Trending Nail Designs</h2>
 
 <div class="container">
 
-  <!-- Card 1 -->
+  <!-- Nail 1 -->
   <div class="card">
-    <img src="03fbba652043ea3436ef4271c8030463.jpg">
-    <h3>💖 Cute Pink Nails</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
+    <a href="https://amzn.to/link1" target="_blank">
+      <img src="03fbba652043ea3436ef4271c8030463.jpg">
     </a>
+    <div class="title">💖 Cute Pink Nails</div>
+    <div class="desc">Soft pink floral nails perfect for a classy feminine look 🌸</div>
+    <a href="https://amzn.to/link1" class="btn" target="_blank">Shop</a>
+    <a href="03fbba652043ea3436ef4271c8030463.jpg" download class="btn">Save 📌</a>
   </div>
 
-  <!-- Card 2 -->
+  <!-- Nail 2 -->
   <div class="card">
-    <img src="1c17a73bb76ebadce0664366b311640a.jpg">
-    <h3>✨ Glossy Nude Nails</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
+    <a href="https://amzn.to/link2" target="_blank">
+      <img src="1c17a73bb76ebadce0664366b311640a.jpg">
     </a>
+    <div class="title">✨ Glossy Nude Nails</div>
+    <div class="desc">Elegant nude nails with a glossy finish for everyday glam 💅</div>
+    <a href="https://amzn.to/link2" class="btn" target="_blank">Shop</a>
+    <a href="1c17a73bb76ebadce0664366b311640a.jpg" download class="btn">Save 📌</a>
   </div>
 
-  <!-- Card 3 -->
+  <!-- Nail 3 -->
   <div class="card">
-    <img src="2202706afb18b4e3955e5ed0b54374ab.jpg">
-    <h3>💅 French Tip Nails</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
+    <a href="https://amzn.to/link3" target="_blank">
+      <img src="2202706afb18b4e3955e5ed0b54374ab.jpg">
     </a>
+    <div class="title">💅 French Tip Nails</div>
+    <div class="desc">Classic French tips with a modern stylish twist 🤍</div>
+    <a href="https://amzn.to/link3" class="btn" target="_blank">Shop</a>
+    <a href="2202706afb18b4e3955e5ed0b54374ab.jpg" download class="btn">Save 📌</a>
   </div>
 
-  <!-- Card 4 -->
+  <!-- Nail 4 -->
   <div class="card">
-    <img src="4c7b34e037838b4598ae0d5ca6037096.jpg">
-    <h3>🌸 Floral Nail Art</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
+    <a href="https://amzn.to/link4" target="_blank">
+      <img src="4c7b34e037838b4598ae0d5ca6037096.jpg">
     </a>
+    <div class="title">🌸 Floral Nails</div>
+    <div class="desc">Cute floral nail art for soft girl aesthetic vibes 🌷</div>
+    <a href="https://amzn.to/link4" class="btn" target="_blank">Shop</a>
+    <a href="4c7b34e037838b4598ae0d5ca6037096.jpg" download class="btn">Save 📌</a>
   </div>
 
-  <!-- Card 5 -->
+  <!-- Nail 5 -->
   <div class="card">
-    <img src="52491356c738447c0cb11ca60ab0c916.jpg">
-    <h3>💎 Luxury Nails</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
+    <a href="https://amzn.to/link5" target="_blank">
+      <img src="52491356c738447c0cb11ca60ab0c916.jpg">
     </a>
+    <div class="title">💎 Glam Nails</div>
+    <div class="desc">Shiny rhinestone nails for a bold luxury look ✨</div>
+    <a href="https://amzn.to/link5" class="btn" target="_blank">Shop</a>
+    <a href="52491356c738447c0cb11ca60ab0c916.jpg" download class="btn">Save 📌</a>
   </div>
 
-  <!-- Card 6 -->
+  <!-- Nail 6 -->
   <div class="card">
-    <img src="5e8bdcb9-f90c-46e8-87ea-233637c23ed.jpg">
-    <h3>🔥 Red Hot Nails</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
+    <a href="https://amzn.to/link6" target="_blank">
+      <img src="5e8bdcb9-f90c-46e8-87ea-233637c23ed.jpg">
     </a>
-  </div>
-
-  <!-- Card 7 -->
-  <div class="card">
-    <img src="757d8749df7b5057e8fe03fe1b4ab601.jpg">
-    <h3>🖤 Black Elegant Nails</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
-    </a>
-  </div>
-
-  <!-- Card 8 -->
-  <div class="card">
-    <img src="8ec4a26bf5256c2bc0b2b5221512b0db.jpg">
-    <h3>🌈 Colorful Nails</h3>
-    <a href="https://amzn.to/4t6c8R6" target="_blank">
-      <button>Shop Now</button>
-    </a>
+    <div class="title">🔥 Acrylic Nails</div>
+    <div class="desc">Trendy long acrylic nails going viral on Pinterest 💅🔥</div>
+    <a href="https://amzn.to/link6" class="btn" target="_blank">Shop</a>
+    <a href="5e8bdcb9-f90c-46e8-87ea-233637c23ed.jpg" download class="btn">Save 📌</a>
   </div>
 
 </div>
