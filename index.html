@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nails by Kylie</title>
+  <title>Nails by Kylie 💅</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       font-family: Arial;
       margin: 0;
-      padding: 0;
       background: #fff0f5;
       text-align: center;
     }
@@ -17,80 +16,94 @@
       background: #ff69b4;
       color: white;
       padding: 20px;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: bold;
     }
 
-    .container {
+    h2 {
+      margin-top: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
       padding: 20px;
     }
 
-    .card {
+    .item {
       background: white;
-      margin: 15px;
-      padding: 20px;
       border-radius: 15px;
+      padding: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      display: inline-block;
-      width: 250px;
     }
 
-    .card img {
+    .item img {
       width: 100%;
       border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .item img:hover {
+      transform: scale(1.05);
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
+      margin-top: 8px;
+      padding: 8px 12px;
       background: #ff69b4;
       color: white;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #ff1493;
     }
 
     footer {
-      margin-top: 30px;
+      font-size: 12px;
       padding: 15px;
-      background: #ff69b4;
-      color: white;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  Nails by Kylie 💅
-</header>
+<header>💅 Nails by Kylie</header>
 
-<div class="container">
-  <p>Welcome to Nails by Kylie 💅✨  
-  Your go-to place for cute, classy, and trending nail designs.</p>
+<h2>✨ Shop Cute Nail Designs</h2>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/250" alt="Nails">
-    <h3>Simple Nails</h3>
-    <a href="#" class="btn">View Ideas</a>
+<div class="gallery">
+
+  <div class="item">
+    <a href="YOUR-AMAZON-LINK-1" target="_blank">
+      <img src="03fbba652043ea3436ef4271c8030463.jpg">
+    </a>
+    <a href="YOUR-AMAZON-LINK-1" target="_blank" class="btn">Shop Now 💖</a>
   </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/250" alt="Nails">
-    <h3>Acrylic Nails</h3>
-    <a href="#" class="btn">View Ideas</a>
+  <div class="item">
+    <a href="YOUR-AMAZON-LINK-2" target="_blank">
+      <img src="5e8bdcb9-f90c-46e8-87ea-233637c23ed.jpg">
+    </a>
+    <a href="YOUR-AMAZON-LINK-2" target="_blank" class="btn">Shop Now 💖</a>
   </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/250" alt="Nails">
-    <h3>Trending Designs</h3>
-    <a href="#" class="btn">View Ideas</a>
+  <div class="item">
+    <a href="YOUR-AMAZON-LINK-3" target="_blank">
+      <img src="Screenshot_20260323_074940_Chrome.jpg">
+    </a>
+    <a href="YOUR-AMAZON-LINK-3" target="_blank" class="btn">Shop Now 💖</a>
   </div>
 
 </div>
 
 <footer>
-  © 2026 Nails by Kylie | Book your appointment soon 💖
+This site contains affiliate links. I may earn a commission at no extra cost to you.
 </footer>
 
 </body>
