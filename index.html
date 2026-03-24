@@ -1,18 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nails by Kylie 💅</title>
+  <title>Nails by Kylie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    /* NAVBAR */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      background: url('https://via.placeholder.com/800x300') no-repeat center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .product {
+      border: 1px solid #eee;
+      padding: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product img {
+      width: 100%;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .price {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f5f5f5;
+      font-size: 12px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Nails by Kylie 💅</h1>
-  <p>Shop the cutest nail designs</p>
+  <h1>Nails by Kylie</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">New</a>
+    <a href="#">Deals</a>
+  </nav>
 </header>
 
-<div class="gallery">
+<section class="hero">
+  <h2>Trendy Nails 2026 💅</h2>
+  <button>Shop Now</button>
+</section>
 
-  <!-- Nail 1 -->
+<section class="products">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200">
+    <p>Pink Acrylic Nails</p>
+    <p class="price">$5.99</p>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200">
+    <p>Glossy Black Nails</p>
+    <p class="price">$6.99</p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Nails by Kylie | Contact | Instagram
+</footer>
+
+</body>
+</html>
